@@ -1,0 +1,7 @@
+Exceptions in java8
+there are two types of exceptions in java
+
+checked exceptions
+These exceptions are ones when thrown need to be caught otherwise the application terminates abnormally.
+
+
