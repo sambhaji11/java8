@@ -1,0 +1,39 @@
+The Solutions Architect:
+Languages:
+1) Java 7 2) Java 8 3) Java 9 4) Java 10 5) Java 11 6) Java 13
+Oracle Certified Java Developer Oracle Certified Web Developer
+7) Python 8) DJango Python Certification
+8) PHP PHP Certification
+9) Perl
+10) Ruby
+11) Groovy
+12) SQL 13) PL/SQL
+14) Spark
+15) Scala
+16) Hadoop
+*** Build Tools***
+ant maven gradle
+*** Version Control Systems***
+SVN Git
+*** Databases***
+H2 database NoSQL mongoDB Oracle MS SQL
+*** DB Tools***
+SQL Developer
+*** Unit Testing***
+JUnit Jmock Mockito PowerMock
+*** Logging***
+Log4J, Logging Framework, 
+*** Web Services***
+socket programming
+java.net package
+RMI
+CORBA
+Server Managed Beans
+
+
+
+
+
+
+
+
