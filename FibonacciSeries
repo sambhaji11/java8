@@ -15,11 +15,10 @@ public class FibonacciSeriesWithoutRecursion {
 			throw new InputMismatchException("INVALID NUMBER! please enter a valid integer");
 		}
 
-		FibonacciSeriesWithoutRecursion fswr = new FibonacciSeriesWithoutRecursion();
-		fswr.printFibonacciSeries(numofDigits);
+		printFibonacciSeries(numofDigits);
 	}
 
-	public void printFibonacciSeries(int num) {
+	public static void printFibonacciSeries(int num) {
 
 		int first = 0;
 		int second = 1;
