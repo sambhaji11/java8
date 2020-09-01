@@ -1,0 +1,54 @@
+package org.sss.function;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class FibonacciSeriesWithoutRecursion {
+
+	public static void main(String[] args) throws InputMismatchException {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter how many fibonacci series numbers you want to print:");
+		int numofDigits;
+		try {
+			numofDigits = scan.nextInt();
+		} catch (InputMismatchException e) {
+			throw new InputMismatchException("INVALID NUMBER! please enter a valid integer");
+		}
+
+		FibonacciSeriesWithoutRecursion fswr = new FibonacciSeriesWithoutRecursion();
+		fswr.printFibonacciSeries(numofDigits);
+	}
+
+	public void printFibonacciSeries(int num) {
+
+		int first = 0;
+		int second = 1;
+		// in case you requested for 0 length fibonacci series
+		if (num == 0) {
+			return;
+		}
+		// when your fibonacci series has one element
+		else if (num == 1) {
+			System.out.print("[" + first + "]");
+		}
+		// otherwise
+		else {
+			System.out.print("[" + first);
+			
+			System.out.print("," + second);
+			for (int i = 3; i <= num; i++) {
+				int sum;
+
+				sum = first + second;
+				first = second;
+				second = sum;
+
+				System.out.print("," + sum);
+			}
+			
+			System.out.println("]");
+		}
+
+	}
+
+}
