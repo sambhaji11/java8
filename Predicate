@@ -1,0 +1,24 @@
+Predicate is a funcational interface used to check a condition based on our condition it will return either true or false;
+for example 
+
+1)if we want to check if the number is even or not 
+we have to simply write
+Predicate<Integer> evenPredicate=(Integer num)->num%2==0;
+2)if we want to check if the collection is empty or not we can write
+Predicate<Collection> isCollectionEmpty=c->isEmpty();
+List<String> names=new ArrayList<String>();
+sysout(isCollectionEmpty.test(names)//should return true
+3)Predicate Joining
+I have a predicate to check if the number is greater than 5 and one more predicate to check if the number is even or not 
+by using these two predicate i can write the code to check if some number is greater than 5 and is odd or not 
+for this we have to use two concepts 
+predicate join and negate of second predicate
+
+Predicate<Integer> greaterThan5=i->i>5;
+Predicate<Integer> evenNumber=i->i%2==0;
+
+now we have some number and want to check if this number is greater than 5 and is even
+
+Integer num=15;
+
+sysout(num->greaterThan5.and(evenNumber.negate()).test(num) );
